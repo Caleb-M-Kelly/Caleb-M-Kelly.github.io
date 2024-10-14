@@ -1,4 +1,15 @@
 .topHead{
 	font-size: 350%;
-	font-family: serif;
+	font-family: "Brush Script MT";
+}
+.primary{
+	background-color:#306AC0 !important;
+	color:#F8F9FA !important;
+}
+.accent{
+	background-color:#00BCD4;
+}
+body,.background{
+	background-color:#ECEFF1 !important;
+	color: #2C3E50;
 }
