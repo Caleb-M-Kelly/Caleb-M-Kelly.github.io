@@ -13,3 +13,7 @@ body,.background{
 	background-color:#ECEFF1 !important;
 	color: #2C3E50;
 }
+.main{
+	font-size: 22px;
+	font-family: "Times New Roman";
+}
