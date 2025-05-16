@@ -62,8 +62,23 @@
 					<div class="col-2">
 					</div>
 				</div>
-			</div>
+		</div>
 	</div>
+	  <div class="mermaid">
+    		graph TD
+     		  CS[Computer Science] --> Algorithms
+      		  CS --> DataStructures
+      		  Algorithms --> LeetCode
+      		  Math --> Calculus
+      		  Math --> LinearAlgebra
+      		  LinearAlgebra --> MachineLearning
+      		  Physics --> Quantum
+      		  MachineLearning --> DeepLearning
+ 	</div>
 </div>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 </body>
 </html>
