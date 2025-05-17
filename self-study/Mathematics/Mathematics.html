@@ -43,7 +43,48 @@
 					<div class="col-2">
 					</div>
 					<div class="col-8 main">
-						
+						<div class="mermaid">
+graph BT
+  mathematics(Mathematics)
+
+  abstract((Abstract<br>Algebra))
+  linear((Linear<br>Algebra))
+  abstractII((Abstract<br>Algebra II))
+  representation((Representation<br>Theory))
+  commutative((Commutative<br>Algebra))
+
+  calculus((Calculus))
+  analysis((Introductory<br>Analysis))
+  realAnalysis((Real<br>Analysis))
+  complexAnalysis((Complex<br>Analysis))
+  functionalAnalysis((Functional<br>Analysis))
+
+  topology((Intro<br>Topology))
+
+  introDiffeq((Intro<br>Differential<br>Equations))
+  partial((Partial<br>Differential<br>Equations))
+  
+  mathematics --> calculus
+  calculus --> analysis
+  analysis --> realAnalysis
+  analysis --> complexAnalysis
+  calculus --> introDiffeq
+  realAnalysis --> functionalAnalysis
+  mathematics --> abstract
+  abstract --> linear
+  introDiffeq --> partial
+  linear --> representation
+  abstract --> abstractII
+  abstractII --> representation
+  abstractII --> commutative
+  analysis --> topology
+  
+
+  
+  
+  
+  
+</div>
 					</div>
 					<div class="col-2">
 					</div>
@@ -51,5 +92,8 @@
 		</div>
 	</div>
 </div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+</script>
 </body>
 </html>
