@@ -43,7 +43,30 @@
 					<div class="col-2">
 					</div>
 					<div class="col-8 main">
-						
+						<div class="mermaid">
+graph BT
+  physics(Physics)
+  physicsI((Physics I))
+  physicsII((Physics II<br>EM))
+  classicalMech((Classical<br>Mechanics))
+  physicsIII((Physics III<br>Waves))
+  qmI((Quantum<br>Physics I))
+  qmII((Quantum<br>Physics II))
+  emII((EM II))
+  relativity((Relativity))
+  generalRelativity((General<br>Relativity))
+  
+  physics --> physicsI
+  physicsI --> classicalMech
+  physicsI --> physicsII
+  physicsII --> physicsIII
+  classicalMech --> qmI
+  physicsIII --> qmI
+  qmI --> qmII
+  physicsII --> relativity
+  physicsII --> emII
+  relativity --> generalRelativity
+</div>
 					</div>
 					<div class="col-2">
 					</div>
